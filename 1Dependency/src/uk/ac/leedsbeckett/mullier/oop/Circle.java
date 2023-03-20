@@ -1,35 +1,35 @@
-package uk.ac.leedsbeckett.mullier.sesc;
+package uk.ac.leedsbeckett.mullier.oop;
 
 import java.awt.Color;
 import java.awt.Graphics;
 
 public class Circle extends Ellipse
 {
-	 public void set( Color colour, int... list)
+	 public void set( Color colour, int... list) //this is a variable parameter list
      {
-         //list[0] is x, list[1] is y, list[2] is radius
          super.set(colour, list[0], list[1],list[2],list[2]);
      }
 
 	
-	public void draw(Graphics g) {
+	public void draw(Graphics g) 
+	{
 		super.draw(g);
 		
 	}
 
 	
-	public double calcArea() {
-		// TODO Auto-generated method stub
+	public double calcArea() 
+	{
 		return super.calcArea();
 	}
 
 	
-	public double calcPerimeter() {
-		// TODO Auto-generated method stub
+	public double calcPerimeter() 
+	{
 		return super.calcPerimeter();
 	}
 
-	  public String ToString() //all classes inherit from object and ToString() is abstract in object
+	  public String ToString() //all classes inherit from object and ToString() is abstract in object (see Object in Java documentation)
 	     {
 	         return super.ToString()+ "circle  "+this.radiusx;
 	     }

@@ -1,4 +1,4 @@
-package uk.ac.leedsbeckett.mullier.sesc;
+package uk.ac.leedsbeckett.mullier.oop;
 
 import java.awt.Color;
 import java.awt.Graphics;

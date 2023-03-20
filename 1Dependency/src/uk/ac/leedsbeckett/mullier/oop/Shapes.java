@@ -1,4 +1,4 @@
-package uk.ac.leedsbeckett.mullier.sesc;
+package uk.ac.leedsbeckett.mullier.oop;
 
 import java.awt.Color;
 import java.awt.Graphics;
@@ -24,7 +24,7 @@ public interface Shapes
     void draw(Graphics g);
     
     /**
-     * calclulates the area of the shape
+     * Calculates the area of the shape
      * @return area
      */
     double calcArea();
