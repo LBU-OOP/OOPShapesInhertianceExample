@@ -29,8 +29,8 @@ public class Circle extends Ellipse
 		return super.calcPerimeter();
 	}
 
-	  public String ToString() //all classes inherit from object and ToString() is abstract in object (see Object in Java documentation)
-	     {
+	public String ToString() //all classes inherit from object and ToString() is abstract in object (see Object in Java documentation)
+	{
 	         return super.ToString()+ "circle  "+this.radiusx;
-	     }
+	}
 }

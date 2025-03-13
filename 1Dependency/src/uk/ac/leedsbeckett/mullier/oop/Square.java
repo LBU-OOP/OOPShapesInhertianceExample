@@ -13,25 +13,27 @@ public class Square extends Rectangle
      }
 
 	
-	public void draw(Graphics g) {
+	public void draw(Graphics g)
+	{
 		super.draw(g);
-		
 	}
 
 	
-	public double calcArea() {
+	public double calcArea()
+	{
 		// TODO Auto-generated method stub
 		return super.calcArea();
 	}
 
 	
-	public double calcPerimeter() {
+	public double calcPerimeter()
+	{
 		// TODO Auto-generated method stub
 		return super.calcPerimeter();
 	}
 
-	  public String ToString() //all classes inherit from object and ToString() is abstract in object
-	  {
-	         return super.ToString()+ "square  "+this.width+","+this.width;
-	  }
+	public String ToString() //all classes inherit from object and ToString() is abstract in object
+	{
+	    return super.ToString()+ "square  "+this.width+","+this.width;
+	}
 }

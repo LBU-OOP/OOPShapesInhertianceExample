@@ -11,9 +11,9 @@ public class TheApplication extends JFrame
 {
 	
 	/**
-	 * example showing a simple shape hiararchy with abstract methods and an interface
+	 * example showing a simple shape hierarchy with abstract methods and an interface
 	 */
-	private static final long serialVersionUID = 1L;
+
 	final int XSIZE = 640, YSIZE = 480;
 	int headX = 10, headY = 50, headXsize = 150, headYsize = 130;
 	int eyeX = headX+(headXsize/4), eyeY = headY+(headYsize/5), eyeSize = headXsize /10, eyeGap = headXsize/3; 
@@ -42,7 +42,7 @@ public class TheApplication extends JFrame
         shapes.add(head);
 			
         //left eye
-        lefteye = new Circle();		
+        lefteye = new Circle();
         col = new Color(255, 255, 255);
         lefteye.set(col, eyeX, eyeY, eyeSize);
         shapes.add(lefteye);
@@ -65,17 +65,17 @@ public class TheApplication extends JFrame
 	 */
 	public void paint(Graphics g)
 	{
-		//draw the shapes in the arra
+		//draw the shapes in the array
 		setBackground(Color.white);	//set the background colour of the frame to white
-		
+
 		for (int i = 0; i<shapes.size(); i++)
 		{
-			Shape s;	//polymorphics reference because a shaoe can point diown in the hierarchy
-			s = (Shape) shapes.get(i);	//get the current shape (but what is it?)
+			Shape s;	//polymorphics reference because a shape can point down in the hierarchy
+			s = shapes.get(i);	//get the current shape (but what is it?)
 			if (s != null)
 			{
 				s.draw(g);		//call the draw method (but which one?)
-				System.out.println(s.ToString()); //call the toSring method (but which one?)
+				System.out.println(s.ToString()); //call the toString method (but which one?)
 			}
 			else
 				System.out.println("invalid shape in array"); //shouldn't happen as factory does not produce rubbish
